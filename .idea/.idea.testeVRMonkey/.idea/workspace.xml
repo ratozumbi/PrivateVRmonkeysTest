@@ -11,18 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cffe68b-b3dc-44c5-8731-cefe4bf7ab63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/AllLevelEnemies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AllLevelEnemies.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +32,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +87,8 @@
       <workItem from="1610299020414" duration="1458000" />
       <workItem from="1610312402835" duration="2382000" />
       <workItem from="1610314908997" duration="3467000" />
-      <workItem from="1610318611968" duration="517000" />
+      <workItem from="1610318611968" duration="1281000" />
+      <workItem from="1610320612252" duration="850000" />
     </task>
     <servers />
   </component>
@@ -191,10 +181,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610312896459" />
-    <state x="621" y="253" width="678" height="534" key="find.popup" timestamp="1610295325998">
+    <state x="621" y="253" width="678" height="534" key="find.popup" timestamp="1610321112379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="253" width="678" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610295325998" />
+    <state x="621" y="253" width="678" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610321112379" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610295306314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -215,20 +205,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <condition expression="ai ==null" language="C#" />
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Character.cs</url>
-          <line>56</line>
-          <properties documentPath="D:\dev\testeVRMonkey\Assets\Scripts\Character.cs" initialLine="56">
-            <startOffsets>
-              <option value="1506" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1523" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

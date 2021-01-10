@@ -5,14 +5,11 @@ using UnityEngine;
 public class EnemyCharacter : Character {
     public override void DealDamage(float val)
     {
-        base.DealDamage(val);
-        
-        audioSource.PlayOneShot(AudioManager.getInstance().playerHit);
-
-        base.DealDamage(val);
-
-        var ai = GetComponent<AIAgent>();
-        print("enemy");
-        ai.OnDrainStart();
+	    var ai = GetComponent<AIAgent>();
+	    if(ai!=null){
+		    GameLogic.instance.RemoveChaser();
+		    ai.OnShotStart();
+		    audioSource.PlayOneShot(AudioManager.getInstance().playerHit);
+		}
     }
 }

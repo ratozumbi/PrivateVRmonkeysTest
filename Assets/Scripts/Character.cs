@@ -53,9 +53,6 @@ public class Character : MonoBehaviour {
 
     public virtual void DealDamage(float val)
     {
-	    var ai = GetComponent<AIAgent>();
-	    if(ai!=null)ai.OnShotStart(); //todo: stop chase sound
-	    print("enemy");
-	    
+
     }
 }
