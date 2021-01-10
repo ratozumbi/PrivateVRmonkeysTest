@@ -75,6 +75,7 @@
           <e p="Effects" t="Include">
             <e p="AutoDeleteParticleEmitter.cs" t="Include" />
           </e>
+          <e p="EnemyCharacter.cs" t="Include" />
           <e p="GameLogic.cs" t="Include" />
           <e p="HidingSpot.cs" t="Include" />
           <e p="Key.cs" t="Include" />

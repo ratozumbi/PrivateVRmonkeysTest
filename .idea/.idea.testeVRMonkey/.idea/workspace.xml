@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3cffe68b-b3dc-44c5-8731-cefe4bf7ab63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/PlayerShock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/PlayerShock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/AllLevelEnemies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AllLevelEnemies.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +38,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Volumetric Lights/Scripts/VolumetricLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageArea.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1mrc2VpLtKjjptrvgmP2J3D0O24" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -72,6 +96,9 @@
       <workItem from="1610292308016" duration="1852000" />
       <workItem from="1610294223995" duration="1986000" />
       <workItem from="1610299020414" duration="1458000" />
+      <workItem from="1610312402835" duration="2382000" />
+      <workItem from="1610314908997" duration="3467000" />
+      <workItem from="1610318611968" duration="517000" />
     </task>
     <servers />
   </component>
@@ -80,42 +107,90 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1610300138546">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1610316593975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138546" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1610300138546">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593975" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1610316593975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138546" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1610300138545">
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593975" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1610316593975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138545" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1610300138546">
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593975" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1610316593975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138546" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1610300156496">
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593975" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1610316593717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156496" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1610300156496">
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593717" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1610316593717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156496" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1610300156495">
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593717" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1610316593717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156495" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1610300156496">
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593717" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1610316593717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156496" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593717" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1610316593718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610316593718" />
+    <state x="783" y="230" key="RollbackChangesDialog" timestamp="1610312896459">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="783" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610312896459" />
     <state x="621" y="253" width="678" height="534" key="find.popup" timestamp="1610295325998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -130,16 +205,30 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs</url>
-          <line>203</line>
+          <line>213</line>
           <properties documentPath="D:\dev\testeVRMonkey\Assets\Scripts\AI\AIAgent.cs" initialLine="203">
             <startOffsets>
-              <option value="5497" />
+              <option value="5728" />
             </startOffsets>
             <endOffsets>
-              <option value="5517" />
+              <option value="5748" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <condition expression="ai ==null" language="C#" />
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Character.cs</url>
+          <line>56</line>
+          <properties documentPath="D:\dev\testeVRMonkey\Assets\Scripts\Character.cs" initialLine="56">
+            <startOffsets>
+              <option value="1506" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1523" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

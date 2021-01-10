@@ -172,6 +172,16 @@ public class AIAgent : MonoBehaviour {
         StartCoroutine(DrainRoutine());
         return true;
     }
+    
+    public bool OnShotStart()
+    {
+        StopAllCoroutines();
+        searchLight.enabled = false;
+        stunParticles.Play();
+        aiEnabled = false;
+        StartCoroutine(DrainRoutine());
+        return true;
+    }
 
     public IEnumerator DrainRoutine()
     {
@@ -266,7 +276,6 @@ public class AIAgent : MonoBehaviour {
     }
     public void AlertAllies(Transform alertTarget)
     {
-        Debug.Log(gameObject.name + " alerting allies");
         foreach (Collider col in Physics.OverlapSphere(transform.position, alertRange))
         {
             AIAgent thisAgent = col.GetComponent<AIAgent>();

@@ -25,14 +25,12 @@ public class Door : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        print("col "+ col.gameObject.name +" "+ col.tag);
         if(state== State.open)
         {
             return;
         }
         if (col.CompareTag("Player"))
         {
-            print("player col");
             if (!locked)
             {
                 Open();

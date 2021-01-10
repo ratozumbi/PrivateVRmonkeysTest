@@ -65,8 +65,6 @@ public class GameLogic : MonoBehaviour {
     {
         chasingEnemies++;
 
-        Debug.Log("Chasers " + chasingEnemies);
-
         calmMusicSource.Pause();
         if (!chaseMusicSource.isPlaying)
         {

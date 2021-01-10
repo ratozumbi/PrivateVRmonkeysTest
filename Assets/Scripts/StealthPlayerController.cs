@@ -61,6 +61,8 @@ public class StealthPlayerController : Character {
     public float drainingEnergyMultiplier = 4.0f;
     public float shockDelay = 0.3f;
     public float shockCost = 10;
+    public float shootCost = 5;
+    public float hoverCost = 2.0f;
     public float drainSpeed = 0;
     public GameObject shockObject;
 
@@ -78,6 +80,8 @@ public class StealthPlayerController : Character {
     public bool canShock = false;
     public bool canCloak = false;
     public bool canDrain = false;
+    public bool canShoot = false;
+    public bool canHover = false;
 
     public ParticleSystem warpParticles;
     
@@ -184,7 +188,8 @@ public class StealthPlayerController : Character {
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         if (GameLogic.instance.gameState != GameLogic.GameStates.gameplay)
         {
             return;
@@ -192,7 +197,8 @@ public class StealthPlayerController : Character {
 
         if (state == States.attacking)
         {
-            if (!Input.GetButton("Drain")){
+            if (!Input.GetButton("Drain"))
+            {
                 StopDrain();
             }
         }
@@ -203,25 +209,28 @@ public class StealthPlayerController : Character {
             drainObject.SetActive(true);
             SetState(States.attacking);
             RaycastHit hit;
-            if(Physics.Raycast(transform.position,transform.forward,out hit, drainRange, enemyLayerMask))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, drainRange, enemyLayerMask))
             {
                 Debug.Log("Hit " + hit.transform.gameObject.name);
                 AIAgent agent = hit.transform.gameObject.GetComponent<AIAgent>();
-                if(agent!=null && agent.aiSight.sightState != AISight.SightStates.seeingEnemy){
+                if (agent != null && agent.aiSight.sightState != AISight.SightStates.seeingEnemy)
+                {
                     agent.OnDrainStart();
                     Debug.Log("Draining ");
-                   // drainObject.SetActive(true);
-                   // SetState(States.attacking);
+                    // drainObject.SetActive(true);
+                    // SetState(States.attacking);
                     drainTarget = agent;
                 }
 
-            }else
+            }
+            else
             {
                 Debug.Log("No hit");
             }
         }
 
-        if (canShock && energy >= shockCost && Input.GetButtonDown("Shock") && (state == States.idle || state == States.moving))
+        if (canShock && energy >= shockCost && Input.GetButtonDown("Shock") &&
+            (state == States.idle || state == States.moving))
         {
 
             SpendEnergy(shockCost);
@@ -251,10 +260,21 @@ public class StealthPlayerController : Character {
                 cloakedModel.SetActive(false);
             }
         }
-        
 
+        if (canShoot && Input.GetButtonDown("Shoot") && (state == States.idle || state == States.moving))
+        {
+            SpendEnergy(shootCost);
+            threadController.moving = false;
+            //SetState(States.shocking);
+            //StopMovement(); optional
+            Fire();
+        }
 
-        if (state == States.idle && !cloaked)
+        if (canHover && Input.GetButtonDown("Hover") && (state == States.idle || state == States.moving))
+        {
+        }
+
+    if (state == States.idle && !cloaked)
         {
  
         
