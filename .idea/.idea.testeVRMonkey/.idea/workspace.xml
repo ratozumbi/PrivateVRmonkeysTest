@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3cffe68b-b3dc-44c5-8731-cefe4bf7ab63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/PlayerShock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/PlayerShock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Volumetric Lights/Scripts/VolumetricLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" />
       </list>
     </option>
   </component>
@@ -67,7 +70,8 @@
       <updated>1610254949284</updated>
       <workItem from="1610254963937" duration="599000" />
       <workItem from="1610292308016" duration="1852000" />
-      <workItem from="1610294223995" duration="1682000" />
+      <workItem from="1610294223995" duration="1986000" />
+      <workItem from="1610299020414" duration="1458000" />
     </task>
     <servers />
   </component>
@@ -80,38 +84,38 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1610292655577">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1610300138546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610292655577" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1610292655577">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138546" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1610300138546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610292655577" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1610292655577">
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138546" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1610300138545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610292655577" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1610292655577">
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138545" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1610300138546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610292655577" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1610292665424">
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610300138546" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1610300156496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610292665424" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1610292665424">
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156496" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1610300156496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610292665424" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1610292665424">
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156496" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1610300156495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610292665424" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1610292665424">
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156495" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1610300156496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610292665424" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610300156496" />
     <state x="621" y="253" width="678" height="534" key="find.popup" timestamp="1610295325998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -125,30 +129,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Door.cs</url>
-          <line>35</line>
-          <properties documentPath="D:\dev\testeVRMonkey\Assets\Scripts\Door.cs" initialLine="33">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs</url>
+          <line>203</line>
+          <properties documentPath="D:\dev\testeVRMonkey\Assets\Scripts\AI\AIAgent.cs" initialLine="203">
             <startOffsets>
-              <option value="772" />
+              <option value="5497" />
             </startOffsets>
             <endOffsets>
-              <option value="784" />
+              <option value="5517" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Door.cs</url>
-          <line>30</line>
-          <properties documentPath="D:\dev\testeVRMonkey\Assets\Scripts\Door.cs" initialLine="29">
-            <startOffsets>
-              <option value="661" />
-            </startOffsets>
-            <endOffsets>
-              <option value="668" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
