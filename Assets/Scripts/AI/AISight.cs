@@ -129,6 +129,10 @@ public class AISight : MonoBehaviour {
         }
         if (character == StealthPlayerController.getInstance().transform)
         {
+            if (StealthPlayerController.getInstance().hovering)
+            {
+                return false;
+            }
             if (StealthPlayerController.getInstance().cloaked)
             {
                 return false;

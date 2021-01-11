@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StealthPlayerController : Character {
 
@@ -54,15 +55,17 @@ public class StealthPlayerController : Character {
     public ProgressBar energyBar;
     [Header("Skills")]
     public bool cloaked = false;
+    public bool hovering = false;
     public bool running = false;
     public float runningSpeedMultiplier = 1.5f;
     public float runningEnergyMultiplier = 1.5f;
     public float cloakingEnergyMultiplier = 3.5f;
+    public float hoveringEnergyMultiplier = 4.0f;
     public float drainingEnergyMultiplier = 4.0f;
     public float shockDelay = 0.3f;
     public float shockCost = 10;
+    public float hoverHeight = 4f;
     public float shootCost = 5;
-    public float hoverCost = 2.0f;
     public float drainSpeed = 0;
     public GameObject shockObject;
 
@@ -84,6 +87,7 @@ public class StealthPlayerController : Character {
     public bool canHover = false;
 
     public ParticleSystem warpParticles;
+    public ParticleSystem hoverParticles;
     
 
     static StealthPlayerController _instance;
@@ -264,21 +268,48 @@ public class StealthPlayerController : Character {
         if (canShoot && Input.GetButtonDown("Shoot") && (state == States.idle || state == States.moving))
         {
             SpendEnergy(shootCost);
-            threadController.moving = false;
-            //SetState(States.shocking);
-            //StopMovement(); optional
             Fire();
         }
 
-        if (canHover && Input.GetButtonDown("Hover") && (state == States.idle || state == States.moving))
+        if (canHover && Input.GetButton("Hover") && (state == States.idle || state == States.moving))
         {
+            normalModel.SetActive(false);
+            cloakedModel.SetActive(true);
+            
+            hovering = true;
+            
+            var pos = transform.position;
+            pos.y = hoverHeight;
+            transform.position = pos;
+
+            if (!hoverParticles.isPlaying)
+            {
+                hoverParticles.Play();
+                var ppos = hoverParticles.transform.position;
+                ppos.y = 0;
+                hoverParticles.transform.position = ppos;
+            }
+        }
+        else
+        {
+            if (hovering && !Input.GetButton("Hover"))
+            {
+                hovering = false;
+                normalModel.SetActive(true);
+                cloakedModel.SetActive(false);
+                
+                if (hoverParticles.isPlaying)
+                {
+                    hoverParticles.Stop();
+                    var ppos = hoverParticles.transform.position;
+                    ppos.y = 0;
+                    hoverParticles.transform.position = ppos;
+                }
+            }
         }
 
     if (state == States.idle && !cloaked)
         {
- 
-        
-
             moving = false;
             inputVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             inputVector = Vector3.ClampMagnitude(inputVector, 1.0f);
@@ -349,6 +380,13 @@ public class StealthPlayerController : Character {
                 
                 threadController.moving = false;
             }
+
+            // if (hovering)
+            // {
+            //     var pos = transform.position;
+            //     pos.y = hoverHeight;
+            //     transform.position = pos;
+            // }
         }
         if (enableEnergyDrain)
         {
@@ -366,6 +404,11 @@ public class StealthPlayerController : Character {
             if (cloaked)
             {
                 energyDrain = energyDrain * cloakingEnergyMultiplier;
+            }
+            
+            if (hovering)
+            {
+                energyDrain = energyDrain * hoveringEnergyMultiplier;
             }
 
             if (!moving)
@@ -453,7 +496,6 @@ public class StealthPlayerController : Character {
         }
         else {
             rb.velocity = newSpeed;
-
         }
     }
 
