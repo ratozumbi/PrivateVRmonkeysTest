@@ -288,6 +288,7 @@ public class StealthPlayerController : Character {
 
             if (!hoverParticles.isPlaying)
             {
+                rb.useGravity = false;
                 hoverParticles.Play();
                 hoverAudio.Play();
                 var ppos = hoverParticles.transform.position;
@@ -305,6 +306,7 @@ public class StealthPlayerController : Character {
                 
                 if (hoverParticles.isPlaying)
                 {
+                    rb.useGravity = true;
                     hoverAudio.Stop();
                     hoverParticles.Stop();
                     var ppos = hoverParticles.transform.position;
