@@ -88,6 +88,10 @@ public class StealthPlayerController : Character {
 
     public ParticleSystem warpParticles;
     public ParticleSystem hoverParticles;
+    public AudioSource hoverAudio;
+    //eu acho que essa classe deveria usasr unity events para notificar os estados,
+    //os componentes podem se subscrever nos eventos e lidar com seus proprios componentes
+    //evitando a agregação desse objeto a componentes individuias que reagem aos estados
     
 
     static StealthPlayerController _instance;
@@ -285,6 +289,7 @@ public class StealthPlayerController : Character {
             if (!hoverParticles.isPlaying)
             {
                 hoverParticles.Play();
+                hoverAudio.Play();
                 var ppos = hoverParticles.transform.position;
                 ppos.y = 0;
                 hoverParticles.transform.position = ppos;
@@ -300,6 +305,7 @@ public class StealthPlayerController : Character {
                 
                 if (hoverParticles.isPlaying)
                 {
+                    hoverAudio.Stop();
                     hoverParticles.Stop();
                     var ppos = hoverParticles.transform.position;
                     ppos.y = 0;

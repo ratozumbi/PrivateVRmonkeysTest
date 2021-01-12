@@ -12,8 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3cffe68b-b3dc-44c5-8731-cefe4bf7ab63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/AllLevelEnemies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/AllLevelEnemies.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,7 @@
       <workItem from="1610322433051" duration="1787000" />
       <workItem from="1610324258005" duration="1533000" />
       <workItem from="1610412631726" duration="599000" />
+      <workItem from="1610477038311" duration="1784000" />
     </task>
     <servers />
   </component>
