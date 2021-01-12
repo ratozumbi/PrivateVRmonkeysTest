@@ -11,10 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cffe68b-b3dc-44c5-8731-cefe4bf7ab63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.testeVRMonkey/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Upgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +37,15 @@
         <option value="$PROJECT_DIR$/Assets/Volumetric Lights/Scripts/VolumetricLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShockDamageArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamageArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AISight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StealthPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Upgrade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameLogic.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +103,9 @@
       <workItem from="1610324258005" duration="1533000" />
       <workItem from="1610412631726" duration="599000" />
       <workItem from="1610477038311" duration="1784000" />
+      <workItem from="1610486680739" duration="1614000" />
+      <workItem from="1610488763962" duration="2044000" />
+      <workItem from="1610490876443" duration="14000" />
     </task>
     <servers />
   </component>
@@ -190,10 +198,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610312896459" />
-    <state x="621" y="96" width="678" height="691" key="find.popup" timestamp="1610322399483">
+    <state x="621" y="96" width="678" height="691" key="find.popup" timestamp="1610488852094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="96" width="678" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610322399483" />
+    <state x="621" y="96" width="678" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610488852094" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610295306314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

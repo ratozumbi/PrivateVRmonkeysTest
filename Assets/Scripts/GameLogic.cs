@@ -28,6 +28,8 @@ public class GameLogic : MonoBehaviour {
     public GameObject ShockText;
     public GameObject CloakText;
     public GameObject DrainText;
+    public GameObject HoverText;
+    public GameObject ShootText;
 
     public GameObject enemyContainer;
     public GameObject enemyModel;
@@ -186,6 +188,7 @@ public class GameLogic : MonoBehaviour {
     {
         switch (upgradeType)
         {
+            //eu teria feito todos os textos no mesmo componente, ao invés de um objeto pra cada texto
             case Upgrade.Type.shock:
                 player.canShock = true;
                 ShockText.SetActive(true);
@@ -197,6 +200,14 @@ public class GameLogic : MonoBehaviour {
             case Upgrade.Type.drain:
                 player.canDrain = true;
                 DrainText.SetActive(true);
+                break;
+            case Upgrade.Type.shoot:
+                player.canShoot = true;
+                HoverText.SetActive(true);
+                break;
+            case Upgrade.Type.hover:
+                player.canHover = true;
+                ShootText.SetActive(true);
                 break;
         }
 
@@ -221,6 +232,14 @@ public class GameLogic : MonoBehaviour {
                     ShowMessageBox("You acquired the DRAIN power! Press V to drain enemies' energy! ONLY WORKS ON UNAWARE ENEMIES");
                     player.canDrain = true;
                     break;
+                case Upgrade.Type.shoot:
+                    ShowMessageBox("You acquired the SHOOT power! Press A to shoot enemies");
+                    player.canShoot = true;
+                    break;
+                case Upgrade.Type.hover:
+                    ShowMessageBox("You acquired the HOVER power! Hold D fly like a boss! BTW, the boss is in the last room, I made you fly over the walls to get there easily");
+                    player.canHover = true;
+                    break;
             }
         }
         else
@@ -236,6 +255,14 @@ public class GameLogic : MonoBehaviour {
                     break;
                 case Upgrade.Type.drain:
                     ShowMessageBox("You acquired the DRAIN power! Press Y to drain enemies' energy! ONLY WORKS ON UNAWARE ENEMIES");
+                    player.canDrain = true;
+                    break;
+                case Upgrade.Type.shoot:
+                    ShowMessageBox("You acquired the SHOOT power! Press A to shoot enemies");
+                    player.canDrain = true;
+                    break;
+                case Upgrade.Type.hover:
+                    ShowMessageBox("You acquired the HOVER power! Hold D fly like a boss");
                     player.canDrain = true;
                     break;
             }
